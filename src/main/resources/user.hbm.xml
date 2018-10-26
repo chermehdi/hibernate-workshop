@@ -1,0 +1,28 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD//EN"
+  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="io.github.mehdithe.domain.User" table="users">
+
+    <meta attribute="class-description">
+      This class contains the user details
+    </meta>
+
+    <id name="id" type="int" column="id">
+      <generator class="native"/>
+    </id>
+
+    <property name="firstName" column="first_name" type="string"/>
+    <property name="lastName" column="last_name" type="string"/>
+    <property name="createdAt" column="created_at" type="date"/>
+    <list name="roles">
+      <key>
+        <column name="user_id"/>
+      </key>
+      <index column="id"/>
+      <one-to-many class="io.github.mehdithe.domain.Role"/>
+    </list>
+  </class>
+</hibernate-mapping>

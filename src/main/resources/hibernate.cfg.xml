@@ -9,7 +9,11 @@
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
     <property name="connection.username">root</property>
     <property name="connection.password">root</property>
-    <property name="hbm2ddl.auto">create-drop</property>
+    <property name="hbm2ddl.auto">create</property>
+    <property name="hibernate.show_sql">true</property>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQL57Dialect</property>
+    <!-- mapping files -->
+    <mapping resource="user.hbm.xml"/>
+    <mapping resource="role.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>
