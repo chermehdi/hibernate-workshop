@@ -1,5 +1,6 @@
 package io.github.mehdithe.orm;
 
+import io.github.mehdithe.domain.Profile;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
@@ -19,6 +20,9 @@ public class HibernateSessionFactoryProvider {
         .build();
     // while creating the metadata object, we could've added our mapped classes, or cash config
     // but since all is configured using xml, there is not so much to do here !
-    return new MetadataSources(serviceRegistry).buildMetadata().buildSessionFactory();
+    return new MetadataSources(serviceRegistry)
+        .addAnnotatedClass(Profile.class)
+        .buildMetadata()
+        .buildSessionFactory();
   }
 }
