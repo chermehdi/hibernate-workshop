@@ -1,13 +1,13 @@
-package io.github.mehdithe.orm;
+package io.github.chermehdi.orm;
 
-import io.github.mehdithe.Example;
-import io.github.mehdithe.domain.Address;
-import io.github.mehdithe.domain.Profile;
+import io.github.chermehdi.Example;
+import io.github.chermehdi.domain.Address;
+import io.github.chermehdi.domain.Profile;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
 /**
- * @author mehdithe
+ * @author chermehdi
  */
 public class HibernatePersistenceEmbeddable extends Example {
 

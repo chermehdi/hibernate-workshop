@@ -1,9 +1,9 @@
-package io.github.mehdithe.domain;
+package io.github.chermehdi.domain;
 
 import javax.persistence.Embeddable;
 
 /**
- * @author mehdithe
+ * @author chermehdi
  */
 @Embeddable
 public class Address {

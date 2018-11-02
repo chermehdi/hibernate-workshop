@@ -38,6 +38,12 @@
       <artifactId>mysql-connector-java</artifactId>
       <version>${mysql.connector.version}</version>
     </dependency>
+    <!-- just to scan the classpath -->
+    <dependency>
+      <groupId>io.github.classgraph</groupId>
+      <artifactId>classgraph</artifactId>
+      <version>LATEST</version>
+    </dependency>
   </dependencies>
 
 </project>

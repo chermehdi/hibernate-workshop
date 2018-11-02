@@ -1,7 +1,7 @@
-package io.github.mehdithe.domain;
+package io.github.chermehdi.domain;
 
 /**
- * @author mehdithe
+ * @author chermehdi
  */
 public class Role {
 

@@ -1,8 +1,8 @@
-package io.github.mehdithe.jdbc;
+package io.github.chermehdi.jdbc;
 
-import io.github.mehdithe.Example;
-import io.github.mehdithe.domain.Role;
-import io.github.mehdithe.domain.User;
+import io.github.chermehdi.Example;
+import io.github.chermehdi.domain.Role;
+import io.github.chermehdi.domain.User;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.DriverManager;
@@ -14,7 +14,7 @@ import java.time.LocalDate;
 /**
  * Class to test the persistence model using raw jdbc api
  *
- * @author mehdithe
+ * @author chermehdi
  */
 public class JdbcPersistence extends Example {
 

@@ -1,9 +1,9 @@
-package io.github.mehdithe;
+package io.github.chermehdi;
 
 /**
  * base class acts as a template to our example tests
  *
- * @author mehdithe
+ * @author chermehdi
  */
 public abstract class Example {
 

@@ -1,12 +1,15 @@
-package io.github.mehdithe.domain;
+package io.github.chermehdi.domain;
 
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
+import javax.persistence.FetchType;
+import javax.persistence.OneToMany;
 
 /**
- * @author mehdithe
+ * @author chermehdi
  */
 public class User {
 
@@ -17,6 +20,39 @@ public class User {
   private String lastName;
 
   private Date createdAt;
+
+
+  @OneToMany(fetch = FetchType.LAZY)
+  private Set<Profile> profiles;
+
+  public Set<Profile> getProfiles() {
+    return profiles;
+  }
+
+  public void setProfiles(Set<Profile> profiles) {
+    this.profiles = profiles;
+  }
+
+
+  class UserProxy extends User {
+
+    private final User user;
+
+    UserProxy(User user) {
+      this.user = user;
+    }
+
+    @Override
+    public Set<Profile> getProfiles() {
+      Set<Profile> profile = getProfileFromDb();
+      this.setProfiles(profile);
+      return super.getProfiles();
+    }
+
+    private Set<Profile> getProfileFromDb() {
+      return null;
+    }
+  }
 
   private List<Role> roles = new ArrayList<>();
 

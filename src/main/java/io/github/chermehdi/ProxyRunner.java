@@ -1,11 +1,11 @@
-package io.github.mehdithe;
+package io.github.chermehdi;
 
 /**
  * Force the sequence (boot, run, destroy) to be called implicitly
  *
- * @author mehdithe
+ * @author chermehdi
  */
-public class ProxyRunner {
+public class ProxyRunner extends Example {
 
   private final Example runnableExample;
 

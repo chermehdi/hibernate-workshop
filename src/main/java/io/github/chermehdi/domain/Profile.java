@@ -1,4 +1,4 @@
-package io.github.mehdithe.domain;
+package io.github.chermehdi.domain;
 
 import javax.persistence.AttributeOverride;
 import javax.persistence.AttributeOverrides;
@@ -9,7 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
- * @author mehdithe
+ * @author chermehdi
  */
 @Entity
 @AttributeOverrides({

@@ -1,6 +1,6 @@
-package io.github.mehdithe.util;
+package io.github.chermehdi.util;
 
-import io.github.mehdithe.orm.HibernateSessionFactoryProvider;
+import io.github.chermehdi.orm.HibernateSessionFactoryProvider;
 import java.util.function.Consumer;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -9,7 +9,7 @@ import org.hibernate.Transaction;
 /**
  * Provides static utility methods to work with hibernate
  *
- * @author mehdithe
+ * @author chermehdi
  */
 public final class ORMUtils {
 
